@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/700/928/small/red-salsa-and-grey-werewolf-gradient-motion-background-loop-video.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+            background-color: white;
+        }
+        .left {
+            flex: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #d75652;
+        }
+        .left img {
+            width: 90%;
+            height: auto;
+        }
+        .right {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .logo {
+            font-size: 2rem;
+            color: #e04f4f;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .input-group input:hover {
+            border-color: #e04f4f;
+            box-shadow: 0 0 5px rgba(224, 79, 79, 0.5);
+        }
+        .btn {
+            background-color: #e04f4f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        .btn-google {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #757575;
+            padding: 10px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .btn-google img {
+            margin-right: 10px;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7865.jpg" alt="Signup Illustration">
+        </div>
+        <div class="right">
+            <div class="logo">SIGN UP HERE</div>
+            <form>
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password">
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="btn-google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png" alt="Google" width="20" height="20">
+                    Sign up with Google
+                </div>
+                <div class="login-link">
+                    Already have an account? <a href="#">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
